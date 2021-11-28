@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keluhan | U're the priority</title>
+        <link rel="stylesheet" href="callbacksatu.css">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/UR THE PRIORITY.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="">ARTICLE</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="keluhan.html">RUANG CERITA</a></li>
+                        <li><a href="home.html">HOME</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon">
+            </div>
+        </div>
+        <div class="output">
+            
+
+            <h5>ceritamu yaitu <span id="hasil"></span> <br>
+                You did a great job and Keep up!</h5> 
+            
+        </div>
+
+        <a href="home.html" type="Submit" class="btn">OK</a>
+
+       
+        
+        <script>
+            document.getElementById("hasil").innerHTML=localStorage.getItem("keyvalue");
+        </script>
+</html>
