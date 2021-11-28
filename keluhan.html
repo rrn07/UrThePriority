@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Keluhan | U're the priority</title>
+        <link rel="stylesheet" href="keluhan.css">
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Antique+B1&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <img src="images/UR THE PRIORITY.png" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="">ARTICLE</a></li>
+                        <li><a href="">CONTACT</a></li>
+                        <li><a href="keluhan.html">RUANG CERITA</a></li>
+                        <li><a href="home.html">HOME</a></li>
+                    </ul>
+                </nav>
+                <img src="images/menu.png" class="menu-icon">
+            </div>
+        </div>
+
+            <h3>Silahkan tulis nama kamu</h3>
+            <div class="form-group">
+                <input type="text" id="name" class="form-field" placeholder="">
+                <label for="name" class="form-label">Name</label>
+            </div>
+            
+            <a href="callbacksatu.html" type="Submit" onclick="getData();" class="btn">Submit</a>
+            
+            <script>
+                function getData()
+                {
+                    var customerName=document.getElementById("name").value;
+                    localStorage.setItem("textvalue",customerName);
+                    return false
+                } 
+            </script>
+    </body>
+</html>
