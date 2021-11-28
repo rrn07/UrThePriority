@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding:0;
+    font-family: 'Shippori Antique B1', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/bg1.jpg);
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding-top: 50px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 13px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: black;
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col{
+    flex-basis: 50%;
+}
+h1 {
+    color: wheat;
+    font-size: 100px;
+}
+p{
+    color: wheat;
+    font-size: 12px;
+    line-height: 15px;
+}
+button {
+    width: 180px;
+    color: black;
+    font-size: 13px;
+    padding: 12px 0px;
+    background: cornsilk;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+button:hover{
+    transform: translateY(-10px);
+}
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 12px;
+    padding: 12px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1
+{
+    background-image: url(images/home1.jpeg);
+}
+.card2
+{
+    background-image: url(images/gambar2.jpg);
+}
+.card3
+{
+    background-image: url(images/home2.jpeg);
+}
+.card4
+{
+    background-image: url(images/home6.jpg);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+h5 {
+    color:wheat;
+    text-shadow: 0 0 0 5px #999;
+}
+.card p {
+    text-shadow: 0 0 0 15px #000;
+    font-size: 9px;
+}
