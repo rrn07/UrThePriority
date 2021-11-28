@@ -1,0 +1,185 @@
+body {
+    background-color: #222;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+body {
+	background: linear-gradient(-45deg, #e9b7ae, #dc9b49,#adb697, #628d7c);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 100px;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
+    
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+    padding-top: 50px;
+}
+.menu-icon{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 100px;
+}
+nav{
+    flex:1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 100px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+    font-size: 13px;
+    transition: 0.3s;
+}
+nav ul li a:hover{
+    color: black;
+}
+
+.output{
+    margin-bottom: 100px;
+}
+.container-text{
+    max-width: 500px;
+    max-width: 900px;
+}
+
+h3{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 30px;
+    max-width: 900px;
+    max-height: 500px;
+}
+
+h5 {
+    justify-content: center ;
+    align-items: center;
+    text-align: justify;
+    margin: 0;
+    padding: 0;    
+    max-width: 900px;
+    max-height:500px ;
+    color: rgb(255, 218, 139);
+    border-color: black;
+}
+
+.btn{
+    justify-content: center;
+    display: flex;
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background: rgb(95, 79, 28);
+    width: 160px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color:#fff ;
+    border-radius: 7px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.16);
+    -webkit-animation-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-animation-property: box-shadow, transform ;
+    transition-property: box-shadow, transform;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1)
+}
+
+.form-group {
+    position: relative;
+    padding: 15px 0 0;
+    width: 50%;
+    align-items: center;
+    margin-bottom: 90px;
+}
+
+.form-field{
+    font-family: 'Shippori Antique B1', sans-serif;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: black;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin-top:10px;
+}
+
+.form-field:placeholder{
+    color:transparent
+}
+.form-label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1.3rem;
+    color: wheat;
+    margin-top: 0px;
+}
+
+.form-field:placeholder-shown ~ .form-label{
+    font-size: 1.3rem;
+    cursor: text;
+    top:20px;   
+}
+.form-field:focus{
+    padding-bottom: 5px;
+    font-weight: 700;
+    border-radius: 3px;
+    border-image: linear-gradient(to right,#755d66, #6cb9b9);
+    border-image-slice: 1;
+}
+.form-field:focus ~ .form-label{
+    position: absolute;
+    top:0;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
